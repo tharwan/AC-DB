@@ -1266,7 +1266,7 @@ class MarketAgent(object):
         
         for slc in range(_SLICES):
             for offer in supply[slc]:
-                var = offer_vars[slc][offer.idx]e
+                var = offer_vars[slc][offer.idx]
                 if var.value() > 0:
                     sys_price[slc] = max(sys_price[slc],offer.price)
 
